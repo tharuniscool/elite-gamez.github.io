@@ -11,6 +11,24 @@
     "image": "images/1.png",
     "url": "g/1.html"
   },
+  { 
+    "title": "2-3-4 Player Games",
+    "description": "TwoPlayerGames lets you play fun 2, 3, and 4 player games with friends on the same device. It offers quick competitive matches and party-style games that are easy to jump into and enjoy together.",
+    "image": "images/ddd235.jpg",
+    "url": "g/2-3-4 Player Games.html"
+  },
+  { 
+    "title": "20 Small Mazes",
+    "description": "20 Small Mazes is a collection of quick, challenging maze puzzles designed to test your logic and navigation skills. Each maze is short and simple to start, but becomes more tricky as you progress.",
+    "image": "images/maez33.jpg",
+    "url": "g/20 Small Mazes.html"
+  },
+  { 
+    "title": "3Dash Editor",
+    "description": "3Dash Editor is a creative level editor that lets you design, customize, and play your own fast-paced platforming levels. Build unique challenges, test your skills, and share your creations with others.",
+    "image": "images/sotdash.jpg",
+    "url": "g/3Dash Editor.html"
+  },
   {
     "title": "10 Bullets",
     "description": "Fire only 10 bullets and try to cause the biggest chain reaction possible. Each hit can explode into more destruction. Timing and accuracy are key to clearing the screen. Can you make every shot count?",
