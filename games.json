@@ -24,6 +24,18 @@
     "url": "g/20 Small Mazes.html"
   },
   { 
+    "title": "3D Pinball Space Cadet",
+    "description": "3D Pinball Space Cadet is a classic arcade pinball game set in a futuristic space theme. Score points by completing missions, activating bonuses, and keeping the ball in play as long as possible.",
+    "image": "images/ballgoburbur.jpg",
+    "url": "g/3D Pinball Space Cadet.html"
+  },
+  { 
+    "title": "500 Caliber Contractz",
+    "description": "500 Caliber Contractz is a tactical first-person shooter focused on precision, stealth, and high-risk missions. Take on contract-based objectives, upgrade your gear, and eliminate targets with realistic sniper mechanics.",
+    "image": "images/gamegopewpewyea.jpg",
+    "url": "g/500 Caliber Contractz.html"
+  },
+  { 
     "title": "3Dash Editor",
     "description": "3Dash Editor is a creative level editor that lets you design, customize, and play your own fast-paced platforming levels. Build unique challenges, test your skills, and share your creations with others.",
     "image": "images/sotdash.jpg",
@@ -160,6 +172,12 @@
     "description": "Shoot bouncing balls to break blocks. Each block has a number of hits required. Keep the blocks from reaching the bottom. Addictive and endless gameplay loop.",
     "image": "images/99balls.jpeg",
     "url": "g/99 Balls.html"
+  },
+  { 
+    "title": "A Date With Death",
+    "description": "A Date With Death is a darkly humorous visual novel where you interact with Death in a story full of choices and unexpected twists. Your decisions shape the dialogue, tone, and outcome as the narrative unfolds.",
+    "image": "images/byebyeohnooo.jpg",
+    "url": "g/A Date With Death.html"
   },
   {   
     "title": "Abandoned",
