@@ -179,6 +179,36 @@
     "image": "images/byebyeohnooo.jpg",
     "url": "g/A Date With Death.html"
   },
+  { 
+    "title": "Adventure Capitalist",
+    "description": "Adventure Capitalist is a clicker game where players build an empire by investing in companies and upgrading them to earn money. The goal is to make profits, unlock new industries, and expand your wealth while you are away.",
+    "image": "images/addd.jpeg",
+    "url": "g/Adventure Capitalist.html"
+  },
+  { 
+    "title": "Airline Tycoon Idle",
+    "description": "Airline Tycoon Idle is a management game where players build and grow their own airline by buying planes, opening routes, and upgrading services. The goal is to increase profits, expand to new destinations, and become a successful airline owner.",
+    "image": "images/planevroom33.jpeg",
+    "url": "g/Airline Tycoon Idle"
+  },
+  { 
+    "title": "Angry Birds Online",
+    "description": "Angry Birds Online is a physics-based puzzle game where players launch birds with unique abilities to destroy structures and defeat enemy pigs. The goal is to complete levels by using strategy and timing to knock down all targets.",
+    "image": "images/badab2.jpeg",
+    "url": "g/Angry Birds Online.html"
+  },
+  { 
+    "title": "Antimatter Dimensions",
+    "description": "Antimatter Dimensions is an incremental idle game where players produce antimatter to unlock dimensions that generate even more resources. The goal is to progress through upgrades, resets, and new mechanics to increase production and advance further.",
+    "image": "images/ohnoooblackholeweee.jpeg",
+    "url": "g/Antimatter Dimensions.html"
+  },
+  { 
+    "title": "Arthur's Nightmare",
+    "description": "Arthur's Nightmare is a platformer game where players guide Arthur through his dream world, avoiding obstacles and enemies. The goal is to complete levels by navigating challenges and reaching the end safely.",
+    "image": "images/badlabubu.jpeg",
+    "url": "g/Arthur's Nightmare.html"
+  },
   {   
     "title": "Abandoned",
     "description": "Search strange lands for your lost brother. Solve tricky puzzles along the way. Explore eerie worlds full of mystery. A haunting puzzle-adventure experience.",
@@ -532,6 +562,24 @@
     "description": "Play as a hungry blob in Blob Eater Adventure, devouring everything in your path. Grow bigger, overcome obstacles, and explore vibrant worlds in this addictive eating spree!",
     "image": "images/wdefrg.jpeg",
     "url": "g/Blob Eater Adventure.html"
+  },
+  { 
+    "title": "Baby Sniper In Vietnam",
+    "description": "Baby Sniper in Vietnam is a shooting game where players control a baby soldier to eliminate enemies in a war-themed setting. The goal is to complete missions by aiming accurately and surviving waves of opponents.",
+    "image": "images/clipped33.webp",
+    "url": "g/Baby Sniper In Vietnam.html"
+  },
+  { 
+    "title": "Bad Bodyguards",
+    "description": "Bad Bodyguards is an action strategy game where players protect a VIP by fighting off waves of enemies. The goal is to survive attacks, upgrade your bodyguards, and keep the VIP safe.",
+    "image": "images/usuk.png",
+    "url": "g/Bad Bodyguards.html"
+  },
+  { 
+    "title": "BallZ",
+    "description": "BallZ is an arcade game where players break stacks of blocks by bouncing balls off them. The goal is to destroy all blocks before they reach the bottom of the screen.",
+    "image": "images/ballzzz.jpeg",
+    "url": "g/BallZ.html"
   },
   {
     "title": "Babel Tower",
