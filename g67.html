@@ -650,20 +650,25 @@
 			<div class="section">
 				<h4>Presets & Quick Actions</h4>
 				<div class="row">
-					<div class="col" style="display:flex;gap:8px;flex-wrap:wrap">
+					<div class="col" style="display: flex; gap: 8px; flex-wrap: wrap">
 						<button class="btn-primary" data-preset="Inferno">Inferno</button>
 						<button class="btn-primary" data-preset="mathias">mathias</button>
 						<button class="btn-primary" data-preset="kirby">kirby</button>
 						<button class="btn-primary" data-preset="Ocean">Ocean</button>
 						<button class="btn-primary" data-preset="Neon">Neon</button>
 						<button class="btn-primary" data-preset="Retro">Retro</button>
-						<button class="btn-ghost" data-preset="Dark">Dark</button>
+            <button class="btn-primary" data-preset="Orange">Orange</button>
+            <button class="btn-primary" data-preset="Metallic">Metallic</button>
+            <button class="btn-primary" data-preset="Lunaar">Lunaar</button>
+            <button class="btn-primary" data-preset="Bloodmoon">Blood moon</button>
+            <button class="btn-primary" data-preset="Acidic">Acidic</button>
+            <button class="btn-primary" data-preset="Cat">Cat</button>
 						<button class="btn-ghost" data-preset="Light">Light</button>
 					</div>
-					<div class="col" style="display:flex;justify-content:flex-end;align-items:center">
+					<div class="col" style="display: flex;justify-content: flex-end;align-items: center;">
 						<button class="btn-primary" id="exportBtn">Export JSON</button>
 						<button class="btn-ghost" id="importBtn">Import JSON</button>
-						<input type="file" id="importFile" accept=".json" style="display:none" />
+						<input type="file" id="importFile" accept=".json" style="display: none"/>
 						<button class="btn-ghost" id="resetBtn">Reset Defaults</button>
 					</div>
 				</div>
@@ -1348,6 +1353,7 @@ importFile.addEventListener('change', function(e){
           snowColor:"#444444", snowCount:60, snowSize:2, snowSpeed:0.8
         }
       };
+      var presets = PRESETS;
 
 var presetBtns = document.querySelectorAll('[data-preset]');
 for(var i=0; i<presetBtns.length; i++){
