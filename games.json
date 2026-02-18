@@ -6,6 +6,12 @@
     "url": "g/bloxy.html"
   },
   { 
+    "title": "Chat",
+    "description": "this is the chat, you can chat on here idk",
+    "image": "img/chatttt.png",
+    "url": "g/chat.html"
+  },
+  { 
     "title": "1",
     "description": "A number puzzle where you combine tiles to reach the ultimate goal of the number 1. Think strategically as each move counts. Every merge brings you closer to victory. Simple rules, but tricky gameplay.",
     "image": "images/1.png",
