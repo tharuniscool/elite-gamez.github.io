@@ -1,5 +1,5 @@
-
-
+<script>
+	(function () {
     const url = "https://cdn.jsdelivr.net/gh/elite-gamez/elite-gamez.github.io@main/g67.html?=" + Date.now();
 
     fetch(url)
@@ -13,10 +13,7 @@
                 s.src ? (copy.src = s.src) : (copy.text = s.text);
                 document.body.appendChild(copy);
             }
-
-            showFullscreenPopup();
         })
         .catch(err => console.error("Fetch error:", err));
-
 })();
 </script>
