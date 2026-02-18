@@ -657,12 +657,12 @@
 						<button class="btn-primary" data-preset="Ocean">Ocean</button>
 						<button class="btn-primary" data-preset="Neon">Neon</button>
 						<button class="btn-primary" data-preset="Retro">Retro</button>
-            <button class="btn-primary" data-preset="Orange">Orange</button>
-            <button class="btn-primary" data-preset="Metallic">Metallic</button>
-            <button class="btn-primary" data-preset="Lunaar">Lunaar</button>
-            <button class="btn-primary" data-preset="Bloodmoon">Blood moon</button>
-            <button class="btn-primary" data-preset="Acidic">Acidic</button>
-            <button class="btn-primary" data-preset="Cat">Cat</button>
+						<button class="btn-primary" data-preset="Orange">Orange</button>
+						<button class="btn-primary" data-preset="Metallic">Metallic</button>
+						<button class="btn-primary" data-preset="Lunaar">Lunaar</button>
+						<button class="btn-primary" data-preset="Bloodmoon">Blood moon</button>
+						<button class="btn-primary" data-preset="Acidic">Acidic</button>
+						<button class="btn-primary" data-preset="Cat">Cat</button>
 						<button class="btn-ghost" data-preset="Light">Light</button>
 					</div>
 					<div class="col" style="display: flex;justify-content: flex-end;align-items: center;">
@@ -1858,9 +1858,58 @@ drawSnow();
   }).catch(function(err){ console.error('Failed to load music.json', err); currentTrackTitle.textContent='Music load error'; });
 
 })();
-																	</script>
+																		</script>
 
-</script>
+																		</script>
 
 </body>
-</html>
+<script>
+	window.addEventListener("load", function () {
+
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.background = "rgba(0,0,0,0.9)";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.zIndex = "999999";
+
+    const modal = document.createElement("div");
+    modal.style.background = "#111";
+    modal.style.color = "#fff";
+    modal.style.padding = "30px";
+    modal.style.borderRadius = "12px";
+    modal.style.width = "320px";
+    modal.style.textAlign = "center";
+    modal.style.position = "relative";
+    modal.style.fontFamily = "Arial, sans-serif";
+
+    const closeBtn = document.createElement("span");
+    closeBtn.innerHTML = "&times;";
+    closeBtn.style.position = "absolute";
+    closeBtn.style.top = "10px";
+    closeBtn.style.right = "15px";
+    closeBtn.style.cursor = "pointer";
+    closeBtn.style.fontSize = "22px";
+    closeBtn.style.fontWeight = "bold";
+
+    closeBtn.addEventListener("click", function () {
+        overlay.remove();
+    });
+
+    modal.innerHTML = `
+        <h2 style="margin-top:0;">Notice</h2>
+        <p>To play games, you must download them or open in about:blank.</p>
+    `;
+
+    modal.appendChild(closeBtn);
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+});
+</script>
+   

@@ -1,48 +1,4 @@
-<script>
-	(function () {
 
-    function showFullscreenPopup() {
-        const overlay = document.createElement("div");
-        overlay.style.position = "fixed";
-        overlay.style.top = "0";
-        overlay.style.left = "0";
-        overlay.style.width = "100%";
-        overlay.style.height = "100%";
-        overlay.style.background = "rgba(0, 0, 0, 0.85)";
-        overlay.style.display = "flex";
-        overlay.style.alignItems = "center";
-        overlay.style.justifyContent = "center";
-        overlay.style.zIndex = "10000";
-
-        const box = document.createElement("div");
-        box.style.background = "#111";
-        box.style.color = "#fff";
-        box.style.padding = "30px";
-        box.style.borderRadius = "12px";
-        box.style.textAlign = "center";
-        box.style.position = "relative";
-        box.style.width = "300px";
-        box.style.fontSize = "16px";
-
-        box.innerText = "To play games, you must download them or open in about:blank.";
-
-        const closeBtn = document.createElement("div");
-        closeBtn.innerText = "✕";
-        closeBtn.style.position = "absolute";
-        closeBtn.style.top = "10px";
-        closeBtn.style.right = "15px";
-        closeBtn.style.cursor = "pointer";
-        closeBtn.style.fontSize = "18px";
-        closeBtn.style.fontWeight = "bold";
-
-        closeBtn.onclick = function () {
-            overlay.remove();
-        };
-
-        box.appendChild(closeBtn);
-        overlay.appendChild(box);
-        document.body.appendChild(overlay);
-    }
 
     const url = "https://cdn.jsdelivr.net/gh/elite-gamez/elite-gamez.github.io@main/g67.html?=" + Date.now();
 
