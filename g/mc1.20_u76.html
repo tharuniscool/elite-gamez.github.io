@@ -34,9 +34,12 @@
         relays: [
           { addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
           { addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId === 1 },
-          { addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 }
+          { addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 },
+          { addr: "wss://wisp.classroom.lat/", comment: "(CUSTOM) kryption replay #1", primary: relayId === 4 },
+          { addr: "wss://wisp.mercurywork.shop/", comment: "(CUSTOM) sandstone relay #1", primary: relayId === 4 }
         ]
       };
+
 
       var q = window.location.search;
       if ((typeof q === "string") && q[0] === "?" && (typeof window.URLSearchParams !== "undefined")) {
