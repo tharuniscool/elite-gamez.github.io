@@ -1,140 +1,139 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<base href="https://cdn.jsdelivr.net/gh/elite-gamez/sf@main/">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport"
-		content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-	<link rel="manifest" href="manifest.json" />
-	<meta name="mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<title>UNDERTALE 10th Anniversary</title>
-	<style>
-		html {
-			background: #000000;
-		}
+  <head>
+    <base href="https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/wowzas49@main/utweb/10th/">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="x-icon" href="https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/wowzas49@main/utweb/fav.ico">
+    <title>UNDERTALE 10th Anniversary</title>
+    <style>
+      html {
+        background: #000000;
+      }
 
-		body {
-			font-family: arial;
-			margin: 0;
-			padding: 0;
-			min-height: 100vh;
-			min-height: -webkit-fill-available;
-			min-height: fill-available;
-			min-height: 100svh;
-			/* Otherwise contents can be covered by an address bar in Safari on iOS 15 */
-			min-width: 100vw;
-			background: #000000;
-			display: flex;
-			flex-direction: column;
-			overflow: hidden;
-			place-items: center;
-		}
+      body {
+        font-family: arial;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        min-height: fill-available;
+        min-height: 100svh; /* Otherwise contents can be covered by an address bar in Safari on iOS 15 */
+        min-width: 100vw;
+        background: #000000;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        place-items: center;
+      }
 
-		.emscripten {
-			padding-right: 0;
-			display: block;
-		}
+      .emscripten {
+        padding-right: 0;
+        display: block;
+      }
 
-		div.emscripten {
-			text-align: center;
-		}
+      div.emscripten {
+        text-align: center;
+      }
 
-		.nsmessage {
-			padding-right: 0;
-			display: inline-block;
-			vertical-align: top;
-			font-weight: bold;
-			color: white;
-		}
+      .nsmessage {
+        padding-right: 0;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+        color: white;
+      }
 
-		div.nsmessage {
-			text-align: center;
-		}
+      div.nsmessage {
+        text-align: center;
+      }
 
-		/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
-		canvas.emscripten {
-			display: none;
-			border: 0px none;
-			outline: none;
-			background-color: black;
-			position: relative;
-			opacity: 0;
-			margin-top: auto;
-			margin-bottom: auto;
-			image-rendering: optimizeSpeed;
-			/* Older versions of FF          */
-			image-rendering: -moz-crisp-edges;
-			/* FF 6.0+                       */
-			image-rendering: -webkit-optimize-contrast;
-			/* Safari                        */
-			image-rendering: -o-crisp-edges;
-			/* OS X & Windows Opera (12.02+) */
-			image-rendering: pixelated;
-			/* Awesome future-browsers       */
-			-ms-interpolation-mode: nearest-neighbor;
-			/* IE                            */
-		}
+      /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+      canvas.emscripten {
+        display: none;
+        border: 0px none;
+        outline: none;
+        background-color: black;
+        position: relative;
+        opacity: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        image-rendering: optimizeSpeed;             /* Older versions of FF          */
+        image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+        image-rendering: -webkit-optimize-contrast; /* Safari                        */
+        image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+        image-rendering: pixelated;                 /* Awesome future-browsers       */
+        -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+      }
 
-		canvas.active {
-			opacity: 1;
-		}
+      canvas.active {
+        opacity: 1;
+      }
 
-		canvas.paused {}
+      canvas.paused {
+      }
 
-		canvas.unpaused {
-			animation-name: none;
-		}
+      canvas.unpaused {
+        animation-name: none;
+      }
 
-		#status {
-			display: inline-block;
-			vertical-align: top;
-			font-weight: bold;
-			color: white;
-		}
+      #status {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+        color: white;
+      }
 
-		div.loading {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			pointer-events: none;
-		}
+      div.loading {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+      }
+      div.loading > * {
+        padding: 10px;
+        margin: 10px;
+      }
 
-		div.loading>* {
-			padding: 10px;
-			margin: 10px;
-		}
+      .labels {
+        font-size: 4px;
+      }
 
-		.labels {
-			font-size: 4px;
-		}
+      .label-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 4px;
+      }
+    </style>
+  </head>
 
-		.label-title {
-			font-weight: bold;
-			text-transform: uppercase;
-			font-size: 4px;
-		}
-	</style>
-</head>
+  <body>
+    <canvas
+      class="emscripten"
+      id="canvas"
+      oncontextmenu="event.preventDefault()"
+      onclick="resume()"
+      tabindex="-1"
+    >
+    </canvas>
+    <div class="loading">
+      <noscript class="nsmessage">This requires JavaScript and WebAssembly to be enabled in your browser.</noscript>
+      <div class="emscripten" id="status">Loading...</div>
+    </div>
 
-<body>
-	<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" onclick="resume()" tabindex="-1">
-	</canvas>
-	<div class="loading">
-		<noscript class="nsmessage">This requires JavaScript and WebAssembly to be enabled in your browser.</noscript>
-		<div class="emscripten" id="status">Loading...</div>
-	</div>
-
-	<script id="tick-worker" type="javascript/worker">
-		let running = false;
+    <script id="tick-worker" type="javascript/worker">
+      let running = false;
       let stop_called = false;
 
       let intervalMs = 16;
@@ -170,8 +169,8 @@
       }
     </script>
 
-	<script type="text/javascript">
-		const blob = new Blob([document.querySelector('#tick-worker').textContent]);
+    <script type="text/javascript">
+      const blob = new Blob([document.querySelector('#tick-worker').textContent]);
       const worker = new Worker(window.URL.createObjectURL(blob));
 
       worker.onmessage = function () {
@@ -277,10 +276,10 @@
           }, 100);
         }
       });
-	</script>
+    </script>
 
-	<script type="text/javascript">
-		var bodyElement = document.getElementsByTagName("body")[0];
+    <script type="text/javascript">
+      var bodyElement = document.getElementsByTagName("body")[0];
       var statusElement = document.getElementById("status");
       var canvasElement = document.getElementById("canvas");
       canvasElement.addEventListener("click", function() { canvasElement.focus(); });
@@ -485,13 +484,8 @@
 
       setWadLoadCallback(() => {
       });
-	</script>
-	<script async type="text/javascript" src="runner.js"></script>
-	<script defer
-		src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-		integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-		data-cf-beacon='{"version":"2024.11.0","token":"35d7216b9596490c99152d7161320e6d","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-		crossorigin="anonymous"></script>
+    </script>
+    <script async type="text/javascript" src="runner.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"35d7216b9596490c99152d7161320e6d","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
-
 </html>
